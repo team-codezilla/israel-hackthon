@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRMS Admin Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cyber Range Admin Dashboard</h1>
+        <!-- LAB STATUS CARDS -->
+        <div id="labCards" class="lab-cards">
+            <!-- Cards populated by admin.js -->
+        </div>
+
+        <!-- ALL BOOKINGS TABLE -->
+        <section>
+            <h2>All Bookings</h2>
+            <table id="allBookingsTable">
+                <thead>
+                    <tr>
+                        <th>Lab</th>
+                        <th>Team</th>
+                        <th>Start</th>
+                        <th>End</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Populated by admin.js -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- LAB UTILIZATION CHART -->
+        <section>
+            <h2>Lab Utilization Stats</h2>
+            <canvas id="labStatsChart" width="400" height="200"></canvas>
+        </section>
+
+        <!-- AUDIT LOG -->
+        <section>
+            <h2>Audit Log</h2>
+            <pre id="auditLog"></pre>
+        </section>
+    </div>
+    <!-- Chart.js for stats -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Admin dashboard logic -->
+    <script src="js/admin.js"></script>
+</body>
+</html>

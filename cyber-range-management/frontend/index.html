@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Range Management System - Booking</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cyber Range Management System</h1>
+        <!-- LAB STATUS CARDS -->
+        <div id="labCards" class="lab-cards"></div>
+
+        <h2>Team Registration & Lab Booking</h2>
+        <form id="bookingForm">
+            <label for="teamName">Team Name:</label>
+            <input type="text" id="teamName" name="teamName" required>
+
+            <label for="lab">Select Lab:</label>
+            <select id="lab" name="lab" required>
+                <option value="Green">Green Lab</option>
+                <option value="Yellow">Yellow Lab</option>
+                <option value="Red">Red Lab</option>
+            </select>
+
+            <label for="startTime">Start Time:</label>
+            <input type="datetime-local" id="startTime" name="startTime" required>
+
+            <label for="endTime">End Time:</label>
+            <input type="datetime-local" id="endTime" name="endTime" required>
+
+            <button type="submit">Book Lab</button>
+        </form>
+        <div id="bookingStatus" class="booking-status"></div>
+
+        <h3>My Bookings</h3>
+        <table id="myBookingsTable">
+            <thead>
+                <tr>
+                    <th>Lab</th>
+                    <th>Start</th>
+                    <th>End</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Populated by app.js -->
+            </tbody>
+        </table>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>

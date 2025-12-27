@@ -1,0 +1,160 @@
+/*
+Cyber Range Management System - Dark Cyber Theme
+*/
+body {
+    background: #181a20;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #23272f;
+    border-radius: 14px;
+    box-shadow: 0 0 32px #00ffe755;
+    padding: 36px 36px 24px 36px;
+    min-height: 90vh;
+}
+h1, h2, h3 {
+    color: #00ffe7;
+    text-shadow: 0 0 8px #00ffe7aa;
+}
+label {
+    display: block;
+    margin-top: 15px;
+    color: #e0e0e0;
+}
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    background: #2c313c;
+    color: #e0e0e0;
+    font-size: 1em;
+}
+button {
+    background: linear-gradient(90deg, #00ffe7 0%, #0077ff 100%);
+    color: #181a20;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.2s;
+}
+button:hover {
+    background: linear-gradient(90deg, #0077ff 0%, #00ffe7 100%);
+}
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 20px;
+    background: #23272f;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px #00ffe722;
+}
+th, td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #333;
+    text-align: left;
+    font-size: 1.05em;
+}
+th {
+    background: #181a20;
+    color: #00ffe7;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+tr:last-child td {
+    border-bottom: none;
+}
+tr:hover td {
+    background: #1a1d23;
+}
+/* LAB STATUS CARDS */
+.lab-cards {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 32px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.lab-card {
+    flex: 1 1 220px;
+    background: #181a20;
+    border-radius: 12px;
+    box-shadow: 0 0 12px #00ffe733;
+    padding: 20px 18px 16px 18px;
+    margin-bottom: 8px;
+    min-width: 220px;
+    max-width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    border: 2px solid #23272f;
+    transition: border 0.2s;
+}
+.lab-card-header {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #00ffe7;
+}
+.lab-card-status {
+    margin-bottom: 8px;
+    font-size: 1.08em;
+}
+.lab-card-booking {
+    margin-bottom: 12px;
+    font-size: 0.98em;
+}
+.force-reset-btn {
+    background: linear-gradient(90deg, #ff0044 0%, #0077ff 100%);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 18px;
+    cursor: pointer;
+    margin-top: 4px;
+    box-shadow: 0 2px 8px #ff004422;
+    transition: background 0.2s;
+}
+.force-reset-btn:hover {
+    background: linear-gradient(90deg, #0077ff 0%, #ff0044 100%);
+}
+/* Lab color accents */
+.lab-green { border-color: #00ffe7; }
+.lab-yellow { border-color: #ffe700; }
+.lab-red { border-color: #ff0044; }
+.status-available { color: #00ffe7; }
+.status-booked { color: #ffe700; }
+.status-cleaning { color: #ff0044; }
+/* Responsive for dashboard */
+@media (max-width: 900px) {
+    .lab-cards {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .container {
+        padding: 12px;
+    }
+}
+pre {
+    background: #181a20;
+    color: #e0e0e0;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+canvas {
+    background: #23272f;
+    border-radius: 8px;
+    margin-top: 20px;
+}
